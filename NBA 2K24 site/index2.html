@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA 2K24</title>
+    <!-- Importando a fonte personalizada -->
+    <style>
+        @font-face {
+            font-family: 'NBA2KFont';
+            src: url('caminho/para/sua/fonte.ttf') format('truetype');
+        }
+
+        /* Estilo geral */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Fade preto no fundo */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/21f172c0b0cfa1874e75d38c672a2961b0db4d02f6e93c5d.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Estilo para o cursor personalizado */
+        * {
+            cursor: url('https://cur.cursors-4u.net/cursors/cur-10/cur911.cur'), auto;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 50px; /* Aumentando espaçamento */
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        /* Título com fonte personalizada */
+        .hero h1 {
+            font-family: 'NBA2KFont', sans-serif;
+            font-size: 60px;
+            margin: 0;
+            letter-spacing: 3px;
+            animation: slideUp 2s ease;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 20px;
+            max-width: 600px;
+            animation: slideUp 3s ease;
+        }
+
+.hero button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+        .hero button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Seções subsequentes */
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .content img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px; /* Arredondando as imagens */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Adicionando sombra */
+            transition: transform 0.3s ease;
+        }
+
+        .content img:hover {
+            transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <img src="https://spottis.com/img/public/nba-2k24-logo.png" alt="Logo NBA 2K24">
+        <nav>
+            <a href="#features">Destaques</a>
+            <a href="#gameplay">Jogabilidade</a>
+            <a href="#store">Comprar</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+<section class="hero">
+    <h1>NBA 2K24</h1>
+    <p>Experimente a mais avançada simulação de basquete com gráficos de última geração e jogabilidade aprimorada. Mergulhe no mundo do NBA 2K24.</p>
+    <a href="https://www.youtube.com/watch?v=i0-Iq9gaZEU" style="text-decoration: none;">
+        <button style="margin-top: 10px; padding: 15px 30px; font-size: 18px; background-color: #ff0000; border: none; color: #fff; cursor: pointer; transition: background-color 0.3s ease;">
+            Explore Mais
+        </button>
+    </a>
+</section>
+
+
+    <!-- Seção Destaques -->
+    <section id="features">
+        <h2>Destaques</h2>
+        <div class="content">
+            <img src="https://meups.com.br/wp-content/uploads/2023/09/twitter_F50ifCJXEAAsqIO-scaled.jpg.webp" alt="Destaque 1">
+            <img src="https://img.hype.games/cdn/4746b803-06fe-4af2-90f2-bcb5e6b15352SCREEN%2004.jpg" alt="Destaque 2">
+            <img src="https://img.hype.games/cdn/ea4657e2-9374-48cd-b37d-dde18c6895f9SCREEN%2003.jpg" alt="Destaque 3">
+        </div>
+        <p style="text-align: center; max-width: 800px; margin: 30px auto;">
+            O NBA 2K24 traz novos modos de jogo, gráficos imersivos e uma experiência de basquete que simula com perfeição a vida na NBA.
+            Acompanhe as últimas atualizações e eventos especiais disponíveis para todos os jogadores.
+        </p>
+    </section>
+
+    <!-- Seção Jogabilidade -->
+    <section id="gameplay">
+        <h2>Jogabilidade</h2>
+        <div class="content">
+            <img src="https://s2-techtudo.glbimg.com/QRVV5cAvtlMs6Gl-Y7btHgMvfV4=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/a/A/K8ncKcSLuBUuvHUUOS6A/lancamentos-semana-nba-2k24-basquete-kobe-bryant-2k-games.jpg" alt="Jogabilidade 1">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/09/nba-2k24-3132922.jpg?tf=3840x" alt="Jogabilidade 2">
+        </div>
+        <p style="text-align: center; max-width: 800px; margin: 30px auto;">
+            Com movimentos refinados e controle preciso, NBA 2K24 oferece a melhor jogabilidade de basquete já vista. Desfrute de modos como MyCareer e MyTeam com novas funcionalidades.
+        </p>
+    </section>
+
+    <!-- Seção Comprar -->
+<section id="store">
+    <h2>Comprar</h2>
+    <div class="content">
+        <img src="https://i0.wp.com/applebygames.co.nz/wp-content/uploads/2024/02/NEW-13-2.png?fit=615%2C406&ssl=1" alt="Edição Padrão">
+    </div>
+    <p style="text-align: center; max-width: 800px; margin: 30px auto;">
+        Adquira agora NBA 2K24 nas edições Padrão e Deluxe, com conteúdo exclusivo e itens digitais especiais para personalizar sua experiência.
+    </p>
+    <div style="text-align: center;">
+        <a href="https://www.playstation.com/pt-br/games/nba-2k24/" style="text-decoration: none;">
+            <button style="border-radius: 50px; padding: 10px 20px;">Comprar Agora</button>
+        </a>
+    </div>
+</section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p style="text-align: center; max-width: 800px; margin: 30px auto;">
+            Para dúvidas, suporte técnico ou informações sobre o NBA 2K24, entre em contato conosco através do email suporte@nba2k24.com ou ligue para nosso número de atendimento.
+        </p>
+    </section>
+
+    <!-- Rodapé com direitos reservados -->
+    <footer>
+        <p>&copy; 2024 NBA 2K24. Todos os direitos reservados. Desenvolvido por <strong>Bruno Morano</strong>.</p>
+    </footer>
+
+</body>
+</html>
